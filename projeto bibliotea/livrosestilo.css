@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Oleo+Script:wght@400;700&display=swap');
+
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;  /* Remove qualquer rolagem horizontal indesejada */
+    font-family: Arial, sans-serif;
+    background-color: #8B6F4E;
+}
+
+/* Estilização do cabeçalho */
+#Topo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    height: 70px;
+    background-color: #62482e;
+    color: white;
+    font-family: "Oleo Script", serif;
+}
+
+#logo {
+    width: 70px;
+    height: 50px;
+    position: absolute;
+    left: 20px;
+    border-radius: 50%;
+}
+
+/* Container principal */
+#container {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+}
+
+/* Campo de pesquisa */
+#wik {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding: 0;
+    gap: 10px; /* Espaçamento entre input e botão */
+}
+
+#procura {
+    border-radius: 10px;
+    padding: 5px;
+    width: 80%; /* Ajustado para dar espaço ao botão */
+    height: 30px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+}
+
+#procura:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#botaoBusca {
+    height: 40px;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#botaoBusca:hover {
+    background-color: #0056b3;
+}
+
+#botaoBusca:active {
+    background-color: #004099;
+}
+
+
+
+/* Estilização do dropdown */
+.dropdown {
+    position: relative;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Esconder dropdown por padrão */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    left: 0;
+    top: 100%;
+}
+
+/* Links dentro do dropdown */
+.dropdown-content a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Exibir dropdown ao passar o mouse */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Seção de benefícios */
+#benefic {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#benefic img {
+    width: 200px;
+    height: 200px;
+    border: 5px solid rgb(155, 103, 62);
+    border-radius: 50px;
+}
